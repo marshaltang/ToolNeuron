@@ -64,7 +64,7 @@ class ImageToolsViewModel @Inject constructor(
             displayName = "4x Upscaler",
             fileName = "upscaler_4x.mnn",
             sizeMB = 18,
-            downloadUrl = "https://huggingface.co/tumuyan2/realsr-models/resolve/main/models-MNNSR/RealESRGAN_x4plus_anime_6B-x4.mnn"
+            downloadUrl = "https://hf-mirror.com/tumuyan2/realsr-models/resolve/main/models-MNNSR/RealESRGAN_x4plus_anime_6B-x4.mnn"
         ),
         ImageTool.SEGMENTER to ToolModelSpec(
             id = "mobilesam",

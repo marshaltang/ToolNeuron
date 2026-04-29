@@ -65,8 +65,8 @@ import java.util.concurrent.TimeUnit
 
 // ── Constants ──
 
-private const val QNN_LIBS_URL = "https://huggingface.co/Void2377/QNN-LIBS/resolve/main/qnnlibs.tar.xz"
-private const val SAFETY_CHECKER_URL = "https://huggingface.co/Void2377/QNN-LIBS/resolve/main/safety_checker.mnn"
+private const val QNN_LIBS_URL = "https://hf-mirror.com/Void2377/QNN-LIBS/resolve/main/qnnlibs.tar.xz"
+private const val SAFETY_CHECKER_URL = "https://hf-mirror.com/Void2377/QNN-LIBS/resolve/main/safety_checker.mnn"
 private const val RUNTIME_DIR = "runtime_libs/qnnlibs"
 
 // ── Sealed state for this screen ──
@@ -125,7 +125,7 @@ fun ImageGenSetupScreen(
                 // Step 1: Check internet connectivity
                 val hasInternet = try {
                     Socket().use { socket ->
-                        socket.connect(InetSocketAddress("huggingface.co", 443), 5000)
+                        socket.connect(InetSocketAddress("hf-mirror.com", 443), 5000)
                         true
                     }
                 } catch (_: Exception) {

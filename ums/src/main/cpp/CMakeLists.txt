@@ -25,7 +25,7 @@ set(BUILD_SHARED_LIBS OFF CACHE BOOL "" FORCE)
 include(FetchContent)
 FetchContent_Declare(
     boringssl
-    GIT_REPOSITORY https://boringssl.googlesource.com/boringssl
+    GIT_REPOSITORY https://gitee.com/mirrors/boringssl.git
     GIT_TAG 617634bc015344093f5ea0b0a5b653c924cfa20d
 )
 FetchContent_MakeAvailable(boringssl)
@@ -33,7 +33,7 @@ FetchContent_MakeAvailable(boringssl)
 # LZ4 — fast compression for per-record storage
 FetchContent_Declare(
     lz4
-    GIT_REPOSITORY https://github.com/lz4/lz4.git
+    GIT_REPOSITORY https://gitee.com/mirrors/lz4.git
     GIT_TAG v1.10.0
 )
 FetchContent_Populate(lz4)

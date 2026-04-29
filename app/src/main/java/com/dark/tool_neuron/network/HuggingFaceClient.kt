@@ -8,14 +8,14 @@ import java.util.concurrent.TimeUnit
 object HuggingFaceClient {
     
     private const val BASE_URL = "https://huggingface.co/"
-    
+    private const val BASE_URL_HF_MIRROR = "https://hf-mirror.com/"
     private val okHttpClient = OkHttpClient.Builder()
         .connectTimeout(30, TimeUnit.SECONDS)
         .readTimeout(30, TimeUnit.SECONDS)
         .build()
     
     val api: HuggingFaceApi = Retrofit.Builder()
-        .baseUrl(BASE_URL)
+        .baseUrl(BASE_URL_HF_MIRROR)
         .client(okHttpClient)
         .addConverterFactory(GsonConverterFactory.create())
         .build()

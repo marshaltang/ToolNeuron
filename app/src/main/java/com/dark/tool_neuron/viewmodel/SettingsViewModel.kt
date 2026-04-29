@@ -268,7 +268,7 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
             action = ModelDownloadService.ACTION_START_DOWNLOAD
             putExtra(ModelDownloadService.EXTRA_MODEL_ID, TTS_MODEL_ID)
             putExtra(ModelDownloadService.EXTRA_MODEL_NAME, "Supertonic v2 TTS")
-            putExtra(ModelDownloadService.EXTRA_FILE_URL, "https://huggingface.co/Supertone/supertonic-2/resolve/main")
+            putExtra(ModelDownloadService.EXTRA_FILE_URL, "https://hf-mirror.com/Supertone/supertonic-2/resolve/main")
             putExtra(ModelDownloadService.EXTRA_IS_ZIP, false)
             putExtra(ModelDownloadService.EXTRA_MODEL_TYPE, "TTS")
             putExtra(ModelDownloadService.EXTRA_RUN_ON_CPU, true)
@@ -284,7 +284,7 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
             action = ModelDownloadService.ACTION_START_DOWNLOAD
             putExtra(ModelDownloadService.EXTRA_MODEL_ID, model.id)
             putExtra(ModelDownloadService.EXTRA_MODEL_NAME, model.name)
-            putExtra(ModelDownloadService.EXTRA_FILE_URL, "https://huggingface.co/${model.fileUri}")
+            putExtra(ModelDownloadService.EXTRA_FILE_URL, "https://hf-mirror.com/${model.fileUri}")
             putExtra(ModelDownloadService.EXTRA_IS_ZIP, model.isZip)
             putExtra(ModelDownloadService.EXTRA_MODEL_TYPE, "GGUF")
             putExtra(ModelDownloadService.EXTRA_RUN_ON_CPU, model.runOnCpu)

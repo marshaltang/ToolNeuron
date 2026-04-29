@@ -20,7 +20,7 @@ android {
         minSdk = 29
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
-        buildConfigField("String", "KEY_ALIAS", "${localProps.getProperty("ALIAS", "")}")
+        buildConfigField("String", "KEY_ALIAS", "\"${localProps.getProperty("ALIAS", "")}\"")
 
         externalNativeBuild {
             cmake {

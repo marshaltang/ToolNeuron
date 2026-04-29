@@ -501,7 +501,7 @@ class ModelDownloadService : Service() {
     private suspend fun downloadTTSModelFiles(
         ttsModelDir: File, modelId: String, modelName: String, notificationId: Int
     ) = withContext(Dispatchers.IO) {
-        val baseUrl = "https://huggingface.co/Supertone/supertonic-2/resolve/main"
+        val baseUrl = "https://hf-mirror.com/Supertone/supertonic-2/resolve/main"
 
         val onnxDir = File(ttsModelDir, "onnx")
         onnxDir.mkdirs()

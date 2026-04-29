@@ -14,6 +14,7 @@ val localPropertiesFile = rootProject.file("local.properties")
 android {
     namespace = "com.dark.tool_neuron"
     compileSdk = 36
+    buildToolsVersion = "36.1.0"
 
     defaultConfig {
         applicationId = "com.dark.tool_neuron"

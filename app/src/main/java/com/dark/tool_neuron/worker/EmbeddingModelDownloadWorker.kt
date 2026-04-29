@@ -41,7 +41,7 @@ class EmbeddingModelDownloadWorker(
 
             modelPath.parentFile?.mkdirs()
 
-            val url = URL("https://huggingface.co/spaces/Void2377/neurov/resolve/main/all-MiniLM-L6-v2-Q5_K_M.gguf?download=true")
+            val url = URL("https://hf-mirror.com/spaces/Void2377/neurov/resolve/main/all-MiniLM-L6-v2-Q5_K_M.gguf?download=true")
             val connection = url.openConnection()
             connection.connect()
 

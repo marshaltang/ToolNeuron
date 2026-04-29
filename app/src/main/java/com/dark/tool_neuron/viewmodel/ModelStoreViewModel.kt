@@ -446,7 +446,7 @@ class ModelStoreViewModel @Inject constructor(
             }
         }
 
-        val fileUrl = "https://huggingface.co/${model.fileUri}"
+        val fileUrl = "https://hf-mirror.com/${model.fileUri}"
 
         val intent = Intent(context, ModelDownloadService::class.java).apply {
             action = ModelDownloadService.ACTION_START_DOWNLOAD

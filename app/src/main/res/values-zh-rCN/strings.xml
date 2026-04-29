@@ -1,0 +1,5 @@
+<resources>
+ <string name="app_name">Tool Neuron</string>
+ <string name="service_name">通知播报</string>
+ <string name="title_activity_main">主界面</string>
+</resources>
