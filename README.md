@@ -1,18 +1,8 @@
-# ToolNeuron
+# ToolNeuron 2 CN
 
 **Offline AI assistant for Android.** Run LLMs, generate images, search documents — all on-device. No cloud. No subscriptions. No data leaves your phone.
 
-[![Platform](https://img.shields.io/badge/Platform-Android_12%2B-3DDC84?logo=android&logoColor=white)](https://github.com/Siddhesh2377/ToolNeuron)
-[![License](https://img.shields.io/badge/License-Apache_2.0-green.svg)](LICENSE)
-[![Discord](https://img.shields.io/badge/Discord-Join-5865F2?logo=discord&logoColor=white)](https://discord.gg/mVPwHDhrAP)
 
-<p align="left">
-  <a href="https://play.google.com/store/apps/details?id=com.dark.tool_neuron">
-    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-         alt="Get it on Google Play"
-         height="80"/>
-  </a>
-</p>
 
 [Download APK](https://github.com/Siddhesh2377/ToolNeuron/releases) · [Discord](https://discord.gg/mVPwHDhrAP) · [Report Issue](https://github.com/Siddhesh2377/ToolNeuron/issues)
 
@@ -37,9 +27,9 @@
 | | Minimum | Recommended |
 |---|---------|-------------|
 | **Android** | 10 (API 29) | 12+ |
-| **RAM** | 6 GB | 8–12 GB |
-| **Storage** | 4 GB free | 10 GB free |
-| **CPU** | ARM64 or x86_64 | Snapdragon 8 Gen 1+ |
+| **RAM** | 8 GB (tested on Pixel 5) | 16 GB (tested on Honor GT90) |
+| **Storage** | 128 GB | 512 GB |
+| **CPU** | Snapdragon 7 Gen 2 | Snapdragon 8 Gen 2 |
 
 ---
 
@@ -53,11 +43,11 @@
 
 **From the in-app Model Store (recommended):**
 1. Open the drawer menu → Model Store
-2. Add a HuggingFace repository (e.g. `bartowski/Phi-3.5-mini-instruct-GGUF`)
+2. Add a HuggingFace repository (e.g. `bartowski/Phi-3.5-mini-instruct-GGUF`) via hf-mirror.com for faster downloads in China
 3. Pick a quantization and download
 
 **Or manually:**
-1. Download a `.gguf` file from [HuggingFace](https://huggingface.co/models?other=gguf)
+1. Download a `.gguf` file from [hf-mirror](https://hf-mirror.com/models?other=gguf)
 2. Use the model picker in ToolNeuron to load it
 
 ### 3. Chat
@@ -156,18 +146,19 @@ Export everything to an encrypted `.tnbackup` file (PBKDF2 + AES-256-GCM):
 - Android Studio Meerkat (2025.1.1)+
 - JDK 17
 - Android SDK 36+, NDK 26.x
+- Ai CLI tool: [openclaude](https://github.com/Gitlawb/openclaude) or [opencode](https://github.com/anomalyco/opencode)
 
 ### Build
 
 ```bash
-git clone https://github.com/Siddhesh2377/ToolNeuron.git
+git clone https://github.com/marshaltang/ToolNeuron.git
 cd ToolNeuron
 
 # Debug
 ./gradlew assembleDebug
 ./gradlew installDebug
 
-# Release
+# Release (uses my own signing config)
 ./gradlew assembleRelease
 ```
 
@@ -245,6 +236,7 @@ If you find a security vulnerability:
 
 ## Acknowledgments
 
+- [Siddhesh Sonar](https://github.com/Siddhesh2377/ToolNeuron) — original author (hf-mirror.com used for model downloads due to access issues)
 - [llama.cpp](https://github.com/ggerganov/llama.cpp) — LLM inference engine
 - [LocalDream](https://github.com/xororz/local-dream) — Stable Diffusion on Android
 - [ONNX Runtime](https://onnxruntime.ai/) — TTS inference
