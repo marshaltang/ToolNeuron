@@ -1,18 +1,7 @@
-# ToolNeuron 2
+# ToolNeuron 2 CN
 
 **Android 离线 AI 助手。** 在本地运行 LLM、生成图片、搜索文档 — 全部设备端完成。无需云端。无需订阅。数据永不离开你的手机。
 
-[![Platform](https://img.shields.io/badge/Platform-Android_12%2B-3DDC84?logo=android&logoColor=white)](https://github.com/Siddhesh2377/ToolNeuron)
-[![License](https://img.shields.io/badge/License-Apache_2.0-green.svg)](LICENSE)
-[![Discord](https://img.shields.io/badge/Discord-Join-5865F2?logo=discord&logoColor=white)](https://discord.gg/mVPwHDhrAP)
-
-<p align="left">
- <a href="https://play.google.com/store/apps/details?id=com.dark.tool_neuron">
- <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
- alt="Get it on Google Play"
- height="80"/>
- </a>
-</p>
 
 [下载 APK](https://github.com/Siddhesh2377/ToolNeuron/releases) · [Discord](https://discord.gg/mVPwHDhrAP) · [报告问题](https://github.com/Siddhesh2377/ToolNeuron/issues)
 
@@ -47,7 +36,7 @@
 
 ### 1. 安装（请移步至Pgyer）
 
-[Google Play](https://play.google.com/store/apps/details?id=com.dark.tool_neuron) 或 [GitHub Releases](https://github.com/Siddhesh2377/ToolNeuron/releases)。
+[Pgyer](https://play.google.com/store/apps/details?id=com.dark.tool_neuron) 或 [GitHub Releases](https://github.com/Siddhesh2377/ToolNeuron/releases)。
 
 ### 2. 获取模型
 
@@ -57,7 +46,7 @@
 3. 选择量化版本并下载
 
 **或手动添加：**
-1. 从 [HuggingFace](https://hf-mirror.com/models?other=gguf) 下载 `.gguf` 文件
+1. 从 [hf-mirror](https://hf-mirror.com/models?other=gguf) 下载 `.gguf` 文件
 2. 使用 ToolNeuron 中的模型选择器加载
 
 ### 3. 开始聊天
@@ -163,18 +152,19 @@ RAG 管道使用混合检索：FTS4 BM25 + 向量搜索 + 互惠排名融合 + �
 - Android Studio Meerkat (2025.1.1)+
 - JDK 17
 - Android SDK 36+、NDK 26.x
+- Ai CLi工具 openclaude or opencode
 
 ### 构建
 
 ```bash
-git clone https://github.com/Siddhesh2377/ToolNeuron.git
+git clone https://github.com/marshaltang/ToolNeuron.git
 cd ToolNeuron
 
 # Debug
 ./gradlew assembleDebug
 ./gradlew installDebug
 
-# Release
+# Release 用了我自己的签名文件
 ./gradlew assembleRelease
 ```
 
@@ -252,7 +242,7 @@ org.gradle.jvmargs=-Xmx4096m
 ---
 
 ## 致谢
-
+- [原著者](https://github.com/Siddhesh2377/ToolNeuron) — 原著者，就是模型下载不了！
 - [llama.cpp](https://github.com/ggerganov/llama.cpp) — LLM 推理引擎
 - [LocalDream](https://github.com/xororz/local-dream) — Android 上的 Stable Diffusion
 - [ONNX Runtime](https://onnxruntime.ai/) — TTS 推理
